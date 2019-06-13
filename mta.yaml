@@ -1,0 +1,38 @@
+ID: Sudheer_HANA2
+_schema-version: '2.0'
+description: Workspace HANA 2.0
+version: 0.0.1
+
+modules:
+ - name: SudheerDB
+   type: hdb
+   path: SudheerDB
+   requires:
+    - name: hdi_SudheerDB
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name}
+
+
+
+    - name: cross-container-service-1
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_1
+        service: ~{the-service-name}
+                          
+
+
+resources:
+ - name: hdi_SudheerDB
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+
+ - name: cross-container-service-1
+   parameters:
+      service-name: HANA Non HDI
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+

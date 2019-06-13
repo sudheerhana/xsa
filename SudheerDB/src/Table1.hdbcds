@@ -1,0 +1,12 @@
+
+namespace Sudheer_HANA2.SudheerDB;
+
+entity OrgEmployees
+{
+   key EmployeeId     : String(10);
+       FirstName      : String(40);
+       StartDate      : LocalDate;
+       SalaryAmount   : Decimal(15, 2);
+       AccountNumber  : String(10);
+  }
+technical configuration {column store;};

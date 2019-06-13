@@ -1,0 +1,10 @@
+{
+	"ServiceName_1": {
+	"object_owner": {
+			"roles":["TRAINING_CONTAINER_ACCESS_G"]
+			},
+			"application_user": {
+				"roles":["TRAINING_CONTAINER_ACCESS"]
+				}
+			}
+ } 

@@ -1,0 +1,14 @@
+
+{
+	"role":{
+		"name": "Sudheer_HANA2.SudheerDB::ReadAccess",
+		"object_privileges":[
+		{
+			"name":"Sudheer_HANA2.SudheerDB::OrgEmployees",
+			"type":"TABLE",
+			"privileges":["SELECT"]
+		}
+							]
+			}
+} 
+ 

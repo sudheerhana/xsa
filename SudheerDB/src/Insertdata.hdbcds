@@ -1,0 +1,39 @@
+{
+    "format_version": 1,
+    "imports": [
+        {
+            "target_table": "Sudheer_HANA2.SudheerDB::OrgEmployees",
+            "source_data": {
+                "data_type": "CSV",
+                "file_name": "Sudheer_HANA2.SudheerDB::CDSOrgEmployees.csv",
+                "has_header": true
+            },
+
+            "import_settings": {
+                "import_columns": [
+                    "EmployeeId",
+                    "FirstName",
+                    "MiddleName",
+                    "LastName",
+                    "Initials",
+                    "Sex",
+                    "Language",
+                    "PhoneNumber",
+                    "EmailAddress",
+                    "LoginName",
+                    "AddressId",
+                    "StartDate",
+                    "EndDate",
+                    "Currency",
+                    "SalaryAmount",
+                    "AccountNumber",
+                    "BankId",
+                    "BankName",
+                    "EmployeePicURL",
+                    "ManagerId",
+                    "OrgUnitId"
+                                   ]
+        						 }
+       }
+           ]
+}

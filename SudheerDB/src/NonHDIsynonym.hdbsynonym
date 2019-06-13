@@ -1,0 +1,8 @@
+{
+  "Sudheer_HANA2.SudheerDB::AWARD": {
+    "target": {
+      "object": "AWARD",
+      "schema": "TRAINING"
+    }
+  }
+}
