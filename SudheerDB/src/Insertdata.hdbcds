@@ -11,6 +11,7 @@
 
             "import_settings": {
                 "import_columns": [
+                "TEST",
                     "EmployeeId",
                     "FirstName",
                     "MiddleName",
